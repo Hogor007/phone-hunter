@@ -77,6 +77,25 @@ main {
     margin-left: auto;
     border-radius: 8px;
 }
+/* SIGNATURE */
+.footer {
+    width: 100%;
+    background-color: #0b0d17;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  #footer-color {
+    color: #df5a65;
+  }
+  .lime {
+    color: lime;
+  }
   /* Scrollbar */
   ::-webkit-scrollbar{
   width: 10px;
