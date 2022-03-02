@@ -9,7 +9,8 @@
 }
 body{
     background-color: #EDF2FC;
-}/* Header */
+}
+/* Header */
 .width{
     width: 150px;
     cursor: pointer;
@@ -70,11 +71,17 @@ main {
     background-color: var(--primary);
     color: #FFF;
 }
+/* Search result count */
+#result-parent p{
+    width: fit-content;
+    margin-left: auto;
+    border-radius: 8px;
+}
   /* Scrollbar */
   ::-webkit-scrollbar{
-    width: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent, #ce145b);
-    border-radius: 6px;
-    }
+  width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #ce145b);
+  border-radius: 6px;
+  }

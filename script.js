@@ -147,3 +147,11 @@ const explore = slugData => {
     }
     hideLoading()
 }
+//Counting search result
+const coountSearchResult = data => {
+    const resultParent = document.getElementById('result-parent');
+    resultParent.innerHTML = `
+      ${(data => data.data.length ? `<p class="py-1 px-3 my-0 text-white bg-dark">${data.data.length} results found</p>` : `<p class="py-1 px-3 my-0 text-white bg-danger">${data.data.length} result found</p>`)(data)
+        }
+    `
+}
