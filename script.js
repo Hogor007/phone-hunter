@@ -155,3 +155,16 @@ const coountSearchResult = data => {
         }
     `
 }
+//Preloader Handle
+const loader = document.getElementById('loader')
+function displayLoading() {
+    loader.classList.remove("d-none");
+    // to stop loading after some time
+    setTimeout(() => {
+        loader.classList.add("d-none");
+    }, 2500);
+}
+function hideLoading() {
+    loader.classList.add("d-none");
+}
+window.addEventListener('load', displayLoading())
