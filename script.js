@@ -24,7 +24,7 @@ const showTotalData = array => {
                   <div class="card-body">
                       <h5 class="card-title">${e.phone_name}</h5>
                       <p class="card-text">Brand: ${e.brand}</p>
-                      <a href="#" onclick = "explore('${e.slug}')" id="explore-btn" class="btn btn-primary">Explore</a>
+                      <a href="#" onclick = "explore('${e.slug}')" id="explore-btn" class="btn btn-primary">View Details</a>
                   </div>
               </div>
           `
@@ -110,7 +110,7 @@ const explore = slugData => {
           <div class="card-body">
             <h5 class="card-title">${data.data.name}</h5>
             <p class="card-text mb-0">Brand: ${data.data.brand}</p>
-            ${(data => data.data.releaseDate ? `<p class="card-text"><small class="text-muted">${data.data.releaseDate}</small></p>` : `<p class="card-text"><small class="text-muted">Releasedate not found</small></p>`)(data)
+            ${(data => data.data.releaseDate ? `<p class="card-text"><small class="text-muted">${data.data.releaseDate}</small></p>` : `<p class="card-text"><small class="text-muted">Release Date not found</small></p>`)(data)
             }
             
             <hr>
