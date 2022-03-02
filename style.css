@@ -50,3 +50,23 @@ input:focus{
 main {
     min-height: 72vh;
 }
+/* Main section/card section */
+#explore-btn,
+#show-more{
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    padding: 5px 15px;
+}
+.image-full{
+    width: calc(100% - 20px);
+}
+/* Spinner */
+#loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 150;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    color: #FFF;
+}
