@@ -60,3 +60,21 @@ const commonForHome = () => {
             displayShowMore(data)
         })
 }
+//Display show more button if data is > 20
+const displayShowMore = data => {
+    // If data is more than 20 then displays show more button, else wont
+    if (data.data.length > 20) {
+        const showMoreBtn = document.getElementById('show-more');
+        showMoreBtn.classList.remove('d-none')
+    }
+}
+// Updates total data by Show more button
+const updateByShowMore = data => {
+    const showMoreBtn = document.getElementById('show-more');
+    showMoreBtn.addEventListener('click', () => {
+        showTotalData(data.data);
+        //Hide Show more button after collapsing all data
+        const showMoreBtn = document.getElementById('show-more');
+        showMoreBtn.classList.add('d-none')
+    })
+}
